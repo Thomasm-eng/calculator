@@ -1,19 +1,19 @@
-//create simple arithmetic functions taking in two numbers
+//create simple arithmetic functions taking in two numbers round results to 3 decimals
 const add = (num1, num2) => {
-    display.textContent = (Number(num1) + Number(num2)).toFixed(3);
+    display.textContent = +(Number(num1) + Number(num2)).toFixed(3);
 }
 const subtract = (num1, num2) => {
-    display.textContent = (num1 - num2).toFixed(3);
+    display.textContent = +(num1 - num2).toFixed(3);
 }
 const multiply = (num1, num2) => {
-    display.textContent = (num1 * num2).toFixed(3);
+    display.textContent = +(num1 * num2).toFixed(3);
 }
 const divide = (num1, num2) => {
     if (num2 === '0'){
         alert('Divide by zero!');
     }
     else {
-        display.textContent = (num1 / num2).toFixed(3);
+        display.textContent = +(num1 / num2).toFixed(3);
     }
 }
 //function to call previous arithmetic functions
